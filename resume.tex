@@ -1,0 +1,88 @@
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{SANTHOSH NAGARAJ} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{\href{mailto:nssvlr@gmail.com}{nssvlr@gmail.com} \\ 
+\href{https://yolossn.com/}{yolossn.com} \\
+\href{https://www.linkedin.com/in/yolossn}{linkedin.com/in/yolossn} \\ \href{https://github.com/yolossn}{github.com/yolossn}}  %
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	Summary
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{SUMMARY}
+
+{Santhosh Nagaraj is a highly skilled Software Engineer with over three years of experience in backend development. He excels at understanding business needs and taking ownership of designing, building, and maintaining products.}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{EXPERIENCE}
+
+\textbf{Software Engineer II} \hfill May 2021 - Present\\
+Microsoft \hfill \textit{Bengaluru, India (Remote)} \newline
+\textbf{Golang, Kubernetes, Postgres, Prometheus, Grafana}
+ \begin{itemize}
+    \itemsep -3pt {} 
+\item Rewrote Nebraska backend using Open API based code generation, this documentation first approach led to better request validation,reduce steps to add a new endpoint and made it easy to generate API clients.
+\item Added e2e tests for Nebraska backend and setup GitHub actions for the same, this helped catch bugs in PRs.
+\item Created Golang Updater library for Nebraska, which abstracts Omaha protocol and made it straight forward to interact with the Nebraska Backend.
+\item Developed Terraform provider for Nebraska as a POC for managing Nebraska in a declarative way from a Git repository.
+\item Reduced the Postgres DB load by optimising slow queries and performing parameter optimization for better Query planning.
+\item Created Headlamp Addon for minikube which lets the users of minikube spin up and experience headlamp easily. This increased the number of downloads for the project and increased adoption among beginners.
+\item Developed `Downloads Tracker` project to monitor GitHub repository metrics. Also, setup the Infra and Grafana Dashboards for the same. This allowed us to track the project adoption which enables us to understand the impact of our contributions.
+ \end{itemize}
+ 
+\textbf{Software Engineer} \hfill Jan 2021 - May 2021\\
+Kinvolk \hfill \textit{Remote} \newline
+\textbf{Golang, Postgres, Keycloak, Prometheus, Grafana}
+ \begin{itemize}
+    \itemsep -3pt {} 
+\item Implemented OIDC Authentication for Nebraska and created documentation for integrating Nebraska with various OIDC providers, enabling enterprise customers to seamlessly manage user access with tools like Auth0, Keycloak etc
+\item Improved Nebraska's backend by adding monitoring support and creating internal dashboards using Grafana and Prometheus, resulting in the ability to identify slow-performing endpoints and monitor efficiency.
+\item Developed Kinvolk User Accounts, a user and team management tool, by extending Keycloak APIs from the ground up.
+\item Added Helm support for Headlamp, enabling easier deployment and management.
+ \end{itemize}
+
+
+\textbf{Software Engineer} \hfill Dec 2018 - Jun 2020\\
+Atlan \hfill \textit{Delhi, India} \newline
+\textbf{Golang, Python, MongoDB, Redis, RabbitMQ}
+ \begin{itemize}
+    \itemsep -3pt {} 
+\item Enhanced the onboarding experience for users, resulting in an increase in pipeline completion and conversion rate.
+\item Created a solution to easily export all data held by an organization in the platform.
+\item Developed the ability to import forms in OpenXLS format, enabling easy migration for customers from competitors.
+\item Contributed to SRE operations and enhanced the product's monitoring and alerting systems.
+\item Developed a query caching layer for internal analytical queries and created reconciliation tools for data workflows to improve efficiency.
+\item Implemented a solution to allow the business team to monitor product adoption in near real time by extracting key metrics.
+ \end{itemize}
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Bachelor of Technology}, VIT University \hfill {2015-2019}\\
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Extra-Curricular Activities
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Extra-Curricular Activities} 
+\begin{itemize}
+    \item 	Participated in Prometheus Docs Working Group and made contributions to Prometheus Documentation
+\end{itemize}
+\end{rSection}
+
+\end{document}
